@@ -55,7 +55,7 @@ function twodconcat(arr){
 newArr = [];
   for(var i = 0; i < arr.length; i++){
     for(var j = 0; j < arr[i].length; j++){
-      newArr.push[i][j];
+      newArr.push(arr[i][j]);
     }
   }
   return newArr;
@@ -65,16 +65,14 @@ newArr = [];
 value x, returns true if x is present in the 2-d array,
 and false otherwise.
 
-function containsElement(arr, x)
-for(var i = 0; i < arr.length; i++){
-      if(i == x){
-        return true;
-      }
-      else{
-        return false;
-      }
-      return containsElement;
-    };
+function containsElement(arr, x){
+    for(var i = 0; i < arr.length; i++){
+        for(var j = 0; j < arr[i].length; j++){
+        if(arr[i][j] == x)
+        }
+    }
+    return true;
+};
 
 
 11. Write a function which, given an two sorted arrays of
@@ -122,7 +120,7 @@ size of one side of the matrix, what is the time complexity
 (Big Oh) of the algorithms you wrote?
 
 9. O(N^2)
-10. O(N)
+10. O(N^2)
 
 15. What is the time complexity of the following function?
 
